@@ -1,4 +1,4 @@
-Rust learning...
+# Rust HashMap
 
 Creates a data-set of words from the book https://www.gutenberg.org/files/98/98-0.txt.
 Implements a fixed sized open addressing hash table by using linear probing to resolve collisions.
@@ -21,3 +21,32 @@ updated and is still present,
 ◦ get_first()
 returns the least recent key-value pair that was either inserted or
 updated and is still present
+
+## Requirements
+
+*install Rust
+
+## Building
+
+**Clone the repo**
+
+```$ git clone https://github.com/tbruckschlegel/rust_hash_map.git```
+
+To run the code with debug output:
+```
+cargo build --features debug
+cargo run --features debug
+```
+otherwise:
+```
+cargo build --release
+cargo run --release
+```
+
+
+**Tests**
+```
+cargo test
+```
+
+
